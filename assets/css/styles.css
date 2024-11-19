@@ -228,6 +228,11 @@ nav .active {
   opacity: 0;
 }
 
+#about .left-grid h3 {
+  text-shadow: 2px 0px 5px black;
+
+}
+
 /* project section */
 
 #projects.section-sub {
@@ -258,6 +263,10 @@ nav .active {
   animation: bottomIn 1s ease-in-out forwards;
   animation-delay: 0.4s;
   opacity: 0;
+}
+
+#projects .left-grid h3{
+  text-shadow: 2px 0px 5px black;
 }
 .action-btn {
   font-size: 18px;
@@ -297,6 +306,10 @@ nav .active {
   align-items: center;
   justify-content: center;
   height:fit-content;
+}
+
+#join-us .content-wrap h3{
+  text-shadow: 2px 0px 5px black;
 }
 .join-form {
   display: flex;
@@ -421,6 +434,10 @@ input:required:valid {
   font-size: 30px;
  
 }
+#resources-content .section-box h1 {
+  text-shadow: 2px 0px 5px black;
+
+}
 
 
 .resources-grid {
@@ -436,8 +453,8 @@ input:required:valid {
   backdrop-filter: blur(8px);
   padding: 20px;
   border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  /* border: 1px solid rgba(255, 255, 255, 0.2); */
+  /* box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); */
   transition: 0.3s;
   height: 200px;
 }
@@ -479,6 +496,10 @@ input:required:valid {
   text-align: center;
 }
 
+#gallery .section-box h2{
+  text-align: left;
+}
+
 /* Portfolio Section */
 .gallery-grid {
   display: grid;
@@ -501,8 +522,9 @@ input:required:valid {
 }
 
 #gallery .section-title{
-  margin-left: 400px;
+  /* margin-left: 400px; */
   color:white;
+  text-align: center;
 }
 
 /* Blog Section */
@@ -550,15 +572,18 @@ input:required:valid {
   padding-left: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: slideIn 1s ease;
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center items horizontally */
 }
 
 .blog-image {
-          
   width: 100%;           
   height: 200px;       
   object-fit: cover;     
-  margin-left:10px;  
-  padding-left: 10px;      
+  display: block; 
+  margin: 0 ; 
+  padding: 0;
 }
 
 .blog-card:hover {
